@@ -343,8 +343,8 @@ color: #EC5863;
 
 .get-started {
    background-color: #FAFBFD;
-   /* display: block; */
-   display: none;
+   display: block;
+   /* display: none; */
    
 }
 .get-started__container {
@@ -554,11 +554,7 @@ height: 77px;
 
    .stay-safe__block-text {
       max-width: none;
-
    }
-
-
-
 }
 
 @media (max-width: 479.98px) {
@@ -576,21 +572,26 @@ height: 77px;
 .experts__container {
 }
 .experts__statistics {
-
 }
+
+.experts__block-text {
+   max-width: 400px;
+}
+
 .statistics-experts {
    max-width: 655px;
    margin: 0px auto;
    position: relative;
 }
+
 .statistics-experts__body {
    background: #FFFFFF;
    box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
    border-radius: 16px;
    position: relative;
    z-index: 2;
+   margin: 0px 0px 80px 0px;
 }
-
 
 .statistics-experts__decor {
    position: absolute;
@@ -624,7 +625,6 @@ right: -55px;
    padding: 25px 80px;
    display: flex;
    text-align: center;
-
 }
 .body-statistics-experts__item {
    flex: 0 1 25%;
@@ -633,7 +633,6 @@ right: -55px;
 
 .body-statistics-experts__item:last-child {
    flex: 0 1 50%;
-
 }
 
 .body-statistics-experts__value {
@@ -649,5 +648,67 @@ letter-spacing: 0.37em;
 text-transform: uppercase;
 color: #000000;
 }
+
+.experts__body {
+   display: flex;
+   align-items: center;
+}
+
+.experts__content {
+   flex: 0 1 50%;
+   padding: 0px 15px 0px 0px;
+}
+
+.experts__video {
+flex: 0 1 50%;
+position: relative;
+padding: 0px 0px 30% 0px;
+}
+
+.experts__video iframe {
+   position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+object-fit: cover;
+}
+
+@media (max-width: 767.98px) {
+   .experts {
+      padding: 80px 0px 30px 0px;
+
+   }
+
+   .experts__body {
+      align-items: stretch;
+      flex-direction: column;
+   }
+   .experts__video {
+      padding: 0px 0px 58% 0px;
+   }
+   .experts__content {
+      padding: 0px 15px 30px 0px;
+      text-align: center;
+   }
+   .statistics-experts__body {
+      margin: 0px 0px 50px 0px;
+   }
+   .body-statistics-experts {
+      padding: 25px;
+   }
+}
+
+@media (max-width: 479.98px) {
+   .body-statistics-experts {
+      flex-direction: column;
+   }
+
+   .body-statistics-experts__item:not(:last-child) {
+      margin: 0px 0px 15px 0px;
+   }
+}
+
+
 
 /* ============================================================ */
